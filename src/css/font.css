@@ -1,0 +1,25 @@
+/*font family*/
+@font-face {
+    font-family: "yekan";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/yekan/woff/Yekan.woff") format("woff");
+    src: url("/assets/fonts/yekan/woff2/Yekan.woff2") format("woff2");
+    src: url("/assets/fonts/yekan/ttf/Yekan.ttf") format("ttf");
+    src: url("/assets/fonts/yekan/eot/Yekan.eot") format("eot");
+  }
+  @font-face {
+    font-family: "yekan";
+    font-weight: bold;
+    font-style: normal;
+    src: url("/assets/fonts/yekan/woff/BYekan.woff") format("woff");
+    src: url("/assets/fonts/yekan/woff2/BYekan.woff2") format("woff2");
+    src: url("/assets/fonts/yekan/ttf/BYekan.ttf") format("ttf");
+    src: url("/assets/fonts/yekan/eot/BYekan.eot") format("eot");
+  }
+  
+
+  /*body*/
+  body, button{
+    font-family: "yekan";
+  }

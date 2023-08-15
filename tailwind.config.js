@@ -5,7 +5,11 @@ module.exports = {
     "./public/**/*"
 ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        sans :['yekan']
+      }
+    },
   },
   plugins: [],
 }
