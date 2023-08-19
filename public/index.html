@@ -167,105 +167,74 @@
                   </svg>
                 </header>
                 <div x-show="tabOne">
-                  <div x-data="{radio:1}" class="flex flex-col gap-2">
-                    <div
-                      @click="radio=1"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                  <div>
+                    <label
+                      for="apple"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===1 ? 'fill-orange-400  stroke-orange-600':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="brand"
+                        id="apple"
+                      />
 
                       <span class="mr-2">اپل</span>
-                    </div>
-                    <div
-                      @click="radio=2"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="samsung"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===2 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="brand"
+                        id="samsung"
+                      />
 
                       <span class="mr-2">سامسونگ</span>
-                    </div>
-                    <div
-                      @click="radio=3"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="xiaumi"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===3 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
-
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="brand"
+                        id="xiaumi"
+                      />
                       <span class="mr-2">شیائومی</span>
-                    </div>
-                    <div
-                      @click="radio=4"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="huawei"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===4 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="brand"
+                        id="huawei"
+                      />
 
                       <span class="mr-2">هووایی</span>
-                    </div>
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="text-gray-600">
-              <div x-data="{ tabOne: false }" class="flex flex-col">
+              <div x-data="{ tabTwo: false }" class="flex flex-col">
                 <header
-                  @click="tabOne= !tabOne"
+                  @click="tabTwo= !tabTwo"
                   class="flex justify-between items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
-                  :class="tabOne ? 'mb-4' : ''"
+                  :class="tabTwo ? 'mb-4' : ''"
                 >
                   <div class="flex items-center">
                     <span class="w-7 h-7 rounded-full bg-gray-100 relative">
@@ -289,7 +258,7 @@
                   </div>
 
                   <svg
-                    :class="tabOne ? 'rotate-180' : ''"
+                    :class="tabTwo ? 'rotate-180' : ''"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -304,84 +273,60 @@
                     />
                   </svg>
                 </header>
-                <div x-show="tabOne">
-                  <div x-data="{radio:1}" class="flex flex-col gap-2">
-                    <div
-                      @click="radio=1"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                <div x-show="tabTwo">
+                  <div>
+                    <label
+                      for="blue"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===1 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
-
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="color"
+                        id="blue"
+                      />
                       <span class="mr-2">آبی</span>
-                    </div>
-                    <div
-                      @click="radio=2"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="green"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===2 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="color"
+                        id="green"
+                      />
 
                       <span class="mr-2">سبز</span>
-                    </div>
-                    <div
-                      @click="radio=3"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="red"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===3 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="color"
+                        id="red"
+                      />
 
                       <span class="mr-2">قرمز</span>
-                    </div>
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="text-gray-600">
-              <div x-data="{ tabOne: false }" class="flex flex-col">
+              <div x-data="{ tabThree: false }" class="flex flex-col">
                 <header
-                  @click="tabOne= !tabOne"
+                  @click="tabThree= !tabThree"
                   class="flex justify-between items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
-                  :class="tabOne ? 'mb-4' : ''"
+                  :class="tabThree ? 'mb-4' : ''"
                 >
                   <div class="flex items-center">
                     <span class="w-7 h-7 rounded-full bg-gray-100 relative">
@@ -404,7 +349,7 @@
                   </div>
 
                   <svg
-                    :class="tabOne ? 'rotate-180' : ''"
+                    :class="tabThree ? 'rotate-180' : ''"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -419,52 +364,36 @@
                     />
                   </svg>
                 </header>
-                <div x-show="tabOne">
-                  <div x-data="{radio:1}" class="flex flex-col gap-2">
-                    <div
-                      @click="radio=1"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                <div x-show="tabThree">
+                  <div>
+                    <label
+                      for="under1"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===1 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="price"
+                        id="under1"
+                      />
 
                       <span class="mr-2">زیر 1.000.000</span>
-                    </div>
-                    <div
-                      @click="radio=2"
-                      class="flex justify-start items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
+                    </label>
+                  </div>
+                  <div>
+                    <label
+                      for="1to10"
+                      class="flex items-center cursor-pointer hover:bg-gray-50 p-2 rounded-md"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                        :class="radio===2 ? 'fill-orange-400  stroke-orange-600 ':''"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"
-                        />
-                      </svg>
+                      <input
+                        class="form-checkbox rounded text-orange-500 focus:ring-orange-500"
+                        type="checkbox"
+                        name="price"
+                        id="1to10"
+                      />
 
                       <span class="mr-2">1.000.000 تا 10.000.000</span>
-                    </div>
+                    </label>
                   </div>
                 </div>
               </div>
