@@ -30,12 +30,72 @@
         </svg>
       </div>
     </div>
-    <!--filter - sort mobile section-->
+    <!---desktop navbar-->
+    <div
+      class="hidden md:flex bg-white shadow-lg sticky top-0 z-10 justify-between items-center py-4 px-1 lg:px-4 mb-6 rounded-xl"
+    >
+      <ul class="flex flex-1 items-center gap-x-2 lg:gap-x-4 text-slate-800">
+        <li
+          class="block px-1 lg:px-3 py-2 hover:bg-slate-50 transition-all duration-500 rounded-md"
+        >
+          <a href="#">LOGO</a>
+        </li>
+        <li
+          class="block px-1 lg:px-3 py-2 hover:bg-slate-50 transition-all duration-500 rounded-md"
+        >
+          <a href="#">خانه</a>
+        </li>
+        <li
+          class="block px-1 lg:px-3 py-2 hover:bg-slate-50 transition-all duration-500 rounded-md"
+        >
+          <a href="#"> تلفن همراه </a>
+        </li>
+        <li
+          class="block px-1 lg:px-3 py-2 hover:bg-slate-50 transition-all duration-500 rounded-md"
+        >
+          <a href="#">لبتاب</a>
+        </li>
+        <li
+          class="block px-1 lg:px-3 py-2 hover:bg-slate-50 transition-all duration-500 rounded-md"
+        >
+          <a href="#"> ساعت هوشمند </a>
+        </li>
+      </ul>
+      <!----search bar-->
+      <div class="bg-gray-100 rounded flex-1 p-1 flex items-center max-w-2xl">
+        <span class="ml-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 stroke-slate-800"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+        </span>
+
+        <input
+          placeholder="جست و جو نام برند، نام مدل، نام محصول و ..."
+          type="search"
+          id="gsearch"
+          name="gsearch"
+          class="p-2 w-full focus:outline-none bg-transparent text-slate-800"
+        />
+      </div>
+    </div>
 
     <div class="grid grid-cols-12 grid-rov-[55px_minmax(500px,_1fr)] md:gap-8">
       <!---sidebar-->
       <div class="hidden md:block col-span-3 row-span-2">
-        <div class="flex flex-col justify-center bg-white rounded-xl p-5 gap-5">
+        <div
+          class="flex flex-col justify-center bg-white rounded-xl px-1 py-4 lg:px-5 gap-5"
+        >
           <!---categories-->
           <div class="flex flex-col justify-center gap-5">
             <span class="text-orange-500 text-xl font-bold">دسته بندی</span>
@@ -468,6 +528,7 @@
             ></span>
           </button>
         </div>
+        <!--filter - sort mobile section-->
         <div class="flex md:hidden items-center gap-2 px-4 mb-9">
           <div
             class="flex flex-1 justify-start px-4 py-2 items-center bg-white rounded"
